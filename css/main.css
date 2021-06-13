@@ -106,7 +106,7 @@ h3 {
 
 .hero {
   background-image: url("../img/hero.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,8 +123,12 @@ h3 {
   height: 100vh;
   left: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 0.7;
   overflow: visible;
+}
+
+.quote-overlay {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .text-overlay {
@@ -144,12 +148,45 @@ footer {
 
 #quote {
   background-image: url("../img/quote.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
   overflow: hidden;
+}
+
+.icon22 {
+  width: 22px;
+  height: 22px;
+}
+
+.icon35 {
+  width: 35px;
+  height: 35px;
+}
+
+.icon55 {
+  width: 55px;
+  height: 55px;
+}
+
+.copyright > p {
+  padding: 1rem 0 0 0;
+  margin: 0;
+}
+
+/********************************************************/
+/* Small devices (landscape phones)                     */ 
+/********************************************************/
+
+@media (min-width:576px) {
+  .hero {
+    background-attachment: fixed;
+  }
+  #quote {
+    background-attachment: fixed;
+  } 
 }
 
 /************************************************/
@@ -160,6 +197,7 @@ footer {
   .centered {
     margin: 0 auto;
   }
+
 }
 
 /* ==========================================================================
